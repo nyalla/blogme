@@ -3,7 +3,7 @@ template: index-page
 slug: /
 title: Naveen Yalla
 tagline: Software Engineer
-featuredImage: /assets/dp.jpg
+featuredImage: /assets/img_20200103_155319061.jpg
 cta:
   ctaText: Know more
   ctaLink: /about
