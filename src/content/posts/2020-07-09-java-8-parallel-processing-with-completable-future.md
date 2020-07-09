@@ -1,7 +1,7 @@
 ---
 template: blog-post
-title: " Java 8 parallel processing with completable future"
-slug: " Java-8-parallel-processing-with-completable-future"
+title: Java 8 parallel processing with completable future
+slug: Java-8-parallel-processing-with-completable-future
 date: 2020-07-09 15:55
 description: |-
   
@@ -18,33 +18,33 @@ So let's take an example, we are taking 3 tasks that have to be executed paralle
 
  - Method 1: add -> it takes the arguments of 2 variable and returns the sum
 
-    public static  Integer  addFun1(int a, int b) {
+   ` public static  Integer  addFun1(int a, int b) {
             System.out.println(Thread.currentThread().getName());
             for (int i=0;i<10;i++){
                 System.out.print(Thread.currentThread().getName()+i);
             }
             return  a+b ;
-        }
+        }`
 
 - Method 2: sub-> it takes the arguments of 2 variable and returns the subtraction
 
-     public static  Integer  subFun1(int a, int b) {
+    ` public static  Integer  subFun1(int a, int b) {
             System.out.println(Thread.currentThread().getName());
             for (int i=0;i<10;i++){
                 System.out.print(Thread.currentThread().getName()+i);
             }
             return  a-b ;
-        }
+        }`
 
 - Method 3: mul-> it takes the arguments of 2 variable and returns the multiplication
 
-     public static  Integer  mulFun1(int a, int b) {
+     `public static  Integer  mulFun1(int a, int b) {
             System.out.println(Thread.currentThread().getName());
             for (int i=0;i<10;i++){
                 System.out.print(Thread.currentThread().getName()+i);
             }
             return  a*b ;
-        }
+        }`
 
 Actual CompletableFuture work starts from here. Before adding futures we have to maintain a global list which bundles all the future list.
 
