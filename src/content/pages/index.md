@@ -8,4 +8,4 @@ cta:
   ctaText: Know more
   ctaLink: /about
 ---
-Myself Naveen from Hydernad, India. I blog about the things I learn daily in software developemtn.
+Myself Naveen from Hyderabad, India. I blog about the things I learn daily in software development.
