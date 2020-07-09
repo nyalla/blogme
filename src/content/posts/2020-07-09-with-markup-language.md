@@ -1,0 +1,38 @@
+---
+template: blog-post
+title: With markup language
+slug: With markup language
+date: 2020-07-09 14:22
+description: With markup language
+---
+When working with web projects, the frequency required to query the database and get results is quite high. This involves a lot of code in your DAO classes and will affect readability and connection backlogs.
+
+If we observe closely, its code is static, except for the `Model`class type and query in it.
+
+For example, if we need Employee details, we will create the code with`Connection`,`Statement`,`ResultSet`, and closing blocks. If we require`Department`details, we need to do the same as before, except we change the`List`type to`Department`and the query we run through it.
+
+Based on this experience, I came across one article by [Roberto Benitez](http://baseprogramming.com/blog1/author/administrator/)on this [blog](http://baseprogramming.com/blog1/2017/08/24/automating-jdbc-crud-operations-with-reflection/).
+
+Please go through the above article and come back here to see how I used it to serve the previously discussed problems.
+
+To implement, check out the steps below:
+
+1.  Create a custom annotation
+2.  Create a `Model` class, which contains mapping fields to the `ResultSet` column names with the created annotation.
+3.  Call the `ResultSet`
+4.  Load the `ResultSet` for each value into the object
+5.  Check for the `Primitive` type
+6.  Auto-box the `Primitive` type class.
+
+### **Create the of Custom Annotation**
+
+Here is how we created the custom annotation:VIM
+
+     public Class Employee{
+    		@DBTable(columnName ="emp_id")
+    		private int empId;
+    		@DBTable(columnName ="emp_name")
+    		private String empName;
+    		//Getters and setters
+    		//Default constructor // mandatory
+    		}
