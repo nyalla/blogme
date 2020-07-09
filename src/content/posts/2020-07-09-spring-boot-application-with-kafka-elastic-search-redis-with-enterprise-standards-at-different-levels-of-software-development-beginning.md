@@ -76,6 +76,8 @@ Apart from this, we can also get sequential diagrams for each use case from Arch
 
 #### Sequence diagram for Technical Usecase-1 :
 
+![Sequence Diagram](/assets/sequence-diagram-1.png "Sequence Diagram for usecase 1")
+
 We can see these types of sequence diagrams from Architect to convey the different actions that have to be implemented.
 
 Based on the Architect use cases, now the developer has to design technical document which talks about the ground details about the implementation. The developer has to talk about the methods and services which she/he is developing and how communication happens with different services.
