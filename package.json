@@ -48,7 +48,8 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.0.0",
-    "react-icons": "^3.10.0"
+    "react-icons": "^3.10.0",
+    "react-custom-share": "^0.4.8",
   },
   "devDependencies": {
     "acorn": "^6.4.1",
