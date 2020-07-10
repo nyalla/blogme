@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
+import CustomReactShare from "../components/CustomReactShare";
 
 import Layout from "../components/layout"
 import SEO from '../components/seo';
@@ -35,6 +36,10 @@ const Post = ({ data, pageContext }) => {
   const Image = frontmatter.featuredImage ? frontmatter.featuredImage.childImageSharp.fluid : ""
   const { previous, next } = pageContext
 
+  var baseUrl = 'https://nyalla.netlify.app/';
+	var postPath = frontmatter.slug;
+	var totalPath = baseUrl + postPath;  
+  
   let props = {
     previous,
     next
@@ -69,6 +74,7 @@ const Post = ({ data, pageContext }) => {
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
+  <CustomReactShare title={frontmatter.title} excerpt={excerpt} url={totalPath} />
       </article>
       {(previous || next) && (
         <Pagination {...props} />
