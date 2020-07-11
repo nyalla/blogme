@@ -36,7 +36,7 @@ const Post = ({ data, pageContext }) => {
   const Image = frontmatter.featuredImage ? frontmatter.featuredImage.childImageSharp.fluid : ""
   const { previous, next } = pageContext
 
-  var baseUrl = 'https://nyalla.netlify.app/';
+  var baseUrl = 'https://nyalla.me/';
 	var postPath = frontmatter.slug;
 	var totalPath = baseUrl + postPath;  
   
