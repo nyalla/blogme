@@ -2,7 +2,7 @@
 template: blog-post
 title: Setup a personal website/blog with Github pages
 slug: setup-a-personal-website-with-Github-pages
-date: 2020-07-09 14:22
+date: 2020-01-03 14:22
 description: Setup a personal website/blog with Github pages
 ---
 
