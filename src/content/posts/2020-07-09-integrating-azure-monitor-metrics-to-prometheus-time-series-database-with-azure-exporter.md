@@ -3,7 +3,7 @@ template: blog-post
 title: Integrating Azure monitor metrics to Prometheus time-series Database with
   Azure exporter
 slug: azure-exporter
-date: 2020-07-09 15:38
+date: 2020-04-29 15:38
 description: Integrating Azure monitor metrics to Prometheus time-series
   Database with Azure exporter
 ---
