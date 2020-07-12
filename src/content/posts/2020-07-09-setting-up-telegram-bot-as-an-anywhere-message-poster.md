@@ -2,7 +2,7 @@
 template: blog-post
 title: Setting up telegram bot as an anywhere message poster
 slug: telegram-bot
-date: 2020-07-09 15:53
+date: 2020-02-11 15:53
 description: telegram-bot
 ---
 **Use case**: Creating an endpoint that posts any text message to your telegram chat without any login
