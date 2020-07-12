@@ -3,7 +3,7 @@ template: blog-post
 title: Spring boot application with Kafka, Elastic Search, Redis with enterprise
   standards at different levels of software development [Beginning]
 slug: Spring-boot-application-Beginning
-date: 2020-07-09 16:02
+date: 2020-07-04 16:02
 description: Spring-boot-application-Beginning
 ---
 There are many resources online when we want to learn about different tools for standard enterprise applications. But there are no specific resources which scatter all the enterprise standards. There are no clear tutorials on how the requirement is seen at different levels of software development. I am going to discuss the aspects of the regular enterprise development scenarios and how each person has to responsible for each level of software development.
