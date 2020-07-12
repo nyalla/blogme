@@ -2,7 +2,7 @@
 template: blog-post
 title: Outlook email crawling using Graph APIs
 slug: Outlook-email-crawling-using-Graph-API
-date: 2020-07-09 15:47
+date: 2020-03-23 15:47
 description: Outlook email crawling using Graph APIs
 ---
 MS Graph APIs documentation is so well maintained and easily understandable in one read. But the actual implementation like when we are creating an app and giving permissions and testing the permissions are bit time-consuming process.
