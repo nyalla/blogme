@@ -1,9 +1,9 @@
 {
   "meta": {
     "title": "Hello world.. Naveen's space",
-    "titleTemplate": "Naveen Blog",
+    "titleTemplate": "Naveen's Blog",
     "description": "A space where I post what I learn daily.",
-    "siteUrl": "https://nyalla.netlify.app/",
+    "siteUrl": "https://nyalla.me",
     "image": "/assets/stackrole.png",
     "twitterUsername": ""
   },
