@@ -2,7 +2,7 @@
 template: blog-post
 title: Java 8 parallel processing with completable future
 slug: Java-8-parallel-processing-with-completable-future
-date: 2020-07-09 15:55
+date: 2020-06-14 15:55
 description: |-
   
   Java 8 parallel processing with completable future
