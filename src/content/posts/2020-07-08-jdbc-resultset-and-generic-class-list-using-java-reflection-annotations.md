@@ -2,7 +2,7 @@
 template: blog-post
 title: JDBC ResultSet and Generic Class List Using Java Reflection Annotations
 slug: java-jdbc
-date: 2020-07-08 14:08
+date: 2020-05-18 14:08
 description: java jdbc
 ---
 When working with web projects, the frequency required to query the database and get results is quite high. This involves a lot of code in your DAO classes and will affect readability and connection backlogs.
