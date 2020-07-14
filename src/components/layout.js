@@ -24,7 +24,13 @@ const Layout = ({children, className}) => {
   const { siteTitle } = site.siteMetadata
 
   return (
-    <div className="primary-container">
+    <div className="primary-container" 
+    style={{
+          backgroundColor: 'var(--bg)',
+          color: 'var(--textNormal)',
+          transition: 'color 0.2s ease-out, background 0.2s ease-out',
+        }}
+    >
       <Header>
         <Logo title={siteTitle} />
         <Navigation/>
