@@ -21,12 +21,12 @@ module.exports = {
         path: `${__dirname}/static/assets/`,
         name: `assets`,
       },
-      {
+    },
+	{
       resolve: `gatsby-plugin-disqus`,
       options: {
         shortname: `nyalla`
       }
-    },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -95,6 +95,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-    'gatsby-plugin-dark-mode'
+	'gatsby-plugin-dark-mode'
   ],
 }
