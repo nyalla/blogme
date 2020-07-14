@@ -21,6 +21,12 @@ module.exports = {
         path: `${__dirname}/static/assets/`,
         name: `assets`,
       },
+      {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `nyalla`
+      }
+    },
     },
     {
       resolve: `gatsby-source-filesystem`,
