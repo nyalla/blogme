@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 import CustomReactShare from "../components/CustomReactShare";
+import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
 
 import Layout from "../components/layout"
 import SEO from '../components/seo';
@@ -40,6 +41,12 @@ const Post = ({ data, pageContext }) => {
 	var postPath = frontmatter.slug;
 	var totalPath = baseUrl + postPath;  
   
+  let disqusConfig = {
+    url: totalPath,
+    identifier: frontmatter.id,
+    title: frontmatter.title,
+  }
+	
   let props = {
     previous,
     next
@@ -75,6 +82,7 @@ const Post = ({ data, pageContext }) => {
           dangerouslySetInnerHTML={{ __html: html }}
         />
   <CustomReactShare title={frontmatter.title} excerpt={excerpt} url={totalPath} />
+	  <Disqus config={disqusConfig} />
       </article>
       {(previous || next) && (
         <Pagination {...props} />
