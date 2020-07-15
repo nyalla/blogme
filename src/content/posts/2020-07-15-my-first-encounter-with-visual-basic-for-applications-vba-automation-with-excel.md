@@ -139,7 +139,7 @@ So above block defines what has to be XML file look like. If you observe 5th  li
 | KB01 | OTHER | US| NY|DDD,AAA,CCC |BELOW |
 
 
-So execute  [code]([https://raw.githubusercontent.com/nyalla/attachments/master/generation/xml_scripts.vba](https://raw.githubusercontent.com/nyalla/attachments/master/generation/xml_scripts.vba)) once without making any changes, then you will understand the entire flow.
+So execute  [code](https://raw.githubusercontent.com/nyalla/attachments/master/generation/xml_scripts.vba) once without making any changes, then you will understand the entire flow.
 
 You can also link this script execution with external event also, like linking this to button click event for more user friendly. 
 On Developer tab, Click on **Insert**  and select a button from **Form controls** .
