@@ -18,7 +18,7 @@ Then I was trying to Automate this by creating a Java project using JAXB. But th
 I was looking for some alternative and came across this hidden feature in Excel. I am not sure why they hiding this "Developer" menu item from excel ribbon by default. So after that it took some time to understand how this can be helpful for my need. Spent some time coding language of VBA. But trust me its not different from our any other language you know. 
 
 **Lets dive into the implementation**
-To get the intial peek into the output what I need , [here]([https://github.com/nyalla/attachments/tree/master/generation](https://github.com/nyalla/attachments/tree/master/generation)) are the XMLs I have to generate.
+To get the intial peek into the output what I need , [here](https://github.com/nyalla/attachments/tree/master/generation) are the XMLs I have to generate.
 
 If you see the XMLs most of the attribute values are static and some of them are basically generate dynamically from user choice.  
 
