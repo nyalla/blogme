@@ -34,7 +34,7 @@ In my case the attributes like country, state codes and courses are pulled out a
  - First I need to tell the script to which excel sheet it has to consider. for that, the command is *Sheets("Sheet1").Select*
  Don't worry about the commands and all, whatever the thing you want to achieve search for MS documentation you will have all commands available.
  - Next, I need to tell the system to store the generated files in some specific location. 
-
+```
        'Variable declaration
         Dim sDir As String
         'Get current directory
@@ -44,7 +44,8 @@ In my case the attributes like country, state codes and courses are pulled out a
         MkDir globalDir
                 
        'Display output on the screen
-        MsgBox "Files will be saved in--  " & globalDir   
+        MsgBox "Files will be saved in--  " & globalDir  
+``` 
 It will create the folder with name "base" where we can find our XMLs.
 
  - Next, step is to repeat the process for all available rows, something like loop through the collection items in Java. For that we have to take the last filled excel row.
