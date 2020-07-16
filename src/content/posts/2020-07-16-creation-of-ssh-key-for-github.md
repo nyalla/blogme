@@ -2,7 +2,7 @@
 template: blog-post
 title: "Creation of SSH key for GitHub "
 slug: ssh-key-github
-date: 2020-07-16 18:33
+date: 2020-06-28 19:02
 description: Creation of SSH key for GitHub desktop
 ---
 Github became one of the great software programmers love. After takeover by MicroSoft, it became even more go to option for free unlimited private repositories.
