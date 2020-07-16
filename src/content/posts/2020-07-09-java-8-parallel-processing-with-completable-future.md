@@ -18,7 +18,7 @@ So let's take an example, we are taking 3 tasks that have to be executed paralle
 
 * Method 1: add -> it takes the arguments of 2 variable and returns the sum
 
-  ```
+  ```java
   public static  Integer  addFun1(int a, int b) {          
   System.out.println(Thread.currentThread().getName());
     for (int i=0;i<10;i++){
@@ -29,7 +29,7 @@ So let's take an example, we are taking 3 tasks that have to be executed paralle
   ```
 * Method 2: sub-> it takes the arguments of 2 variable and returns the subtraction
 
-  ```
+  ```java
   public static  Integer  subFun1(int a, int b) {
   System.out.println(Thread.currentThread().getName());
       for (int i=0;i<10;i++){
@@ -40,7 +40,7 @@ So let's take an example, we are taking 3 tasks that have to be executed paralle
   ```
 * Method 3: mul-> it takes the arguments of 2 variable and returns the multiplication
 
-  ```
+  ```java
   public static  Integer  mulFun1(int a, int b) {
   	System.out.println(Thread.currentThread().getName());
               for (int i=0;i<10;i++){
@@ -56,7 +56,7 @@ Actual CompletableFuture work starts from here. Before adding futures we have to
 
 Then the method which we have created that has to be run parallel we have declare them as CompletableFuture methods.
 
-```
+```java
 CompletableFuture<Integer> addAsy = CompletableFuture.supplyAsync(()->(addFun1(10,5)));
 CompletableFuture<Integer> subAsy = CompletableFuture.supplyAsync(()->(subFun1(10,5)));
 CompletableFuture<Integer> mulAsy = CompletableFuture.supplyAsync(()->(mulFun1(10,5)));
@@ -66,7 +66,7 @@ So the above methods are converted into completable futures that can process par
 
 As we said in the above line all the futures are added to the global future list.
 
-```
+```java
 futuresList.add(addAsy);
 futuresList.add(subAsy);
 futuresList.add(mulAsy);
@@ -74,14 +74,14 @@ futuresList.add(mulAsy);
 
 Then we have to write a line that keeps the agreement among all threads saying "waits till all the threads in the arguments get completed". For that, we have to use "allOf" method.
 
-```
+```java
 CompletableFuture<Void> allFutures = CompletableFuture
                 .allOf(futuresList.toArray(new CompletableFuture[futuresList.size()]));
 ```
 
 Then we have to write a line that says after the completion of execution for all threads, collect all the return values from all the threads.
 
-```
+```java
 CompletableFuture<List<Integer>> allCompletableFuture = allFutures.thenApply(future -> {
             return futuresList.stream().map(completableFuture -> completableFuture.join())
                     .collect(Collectors.toList());
@@ -90,13 +90,13 @@ CompletableFuture<List<Integer>> allCompletableFuture = allFutures.thenApply(fut
 
 Finally, define the future list as a completable future.
 
-```
+```java
 CompletableFuture<List<Integer>> completableFuture = allCompletableFuture.toCompletableFuture();
 ```
 
 All the setup has done for making the parallel processing using completable future. To call that entire parallel method, below is the line using get()
 
-```
+```java
 try {
             List<Integer> finalList = (List<Integer>) completableFuture.get();
             System.out.print(finalList);
