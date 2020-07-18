@@ -55,9 +55,3 @@ Open your github settings and navigate to SSH keys option and add key to it.
 
 That's it. Now you can seamlessly commit the changes to github from your machine.
 
-#### **Some of the useful git commands:**
-
-| Description        | Command |
-| ------------- |-------------|
-|To take master checkout	      |git checkout master |
-
