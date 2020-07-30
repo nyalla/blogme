@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "Hello world.. Naveen's space",
-    "titleTemplate": "Naveen's Blog",
-    "description": "A space where I post what I learn daily.",
+    "title": "@nyalla",
+    "titleTemplate": "@nyalla, blog about Java & Spring Boot, building scalable microservice architecture products",
+    "description": "@nyalla, Blog about Java & Spring Boot, building scalable microservice architecture products using Netflix OSS components. #NODE #JAVA #SPRINGBOOT #BACKEND #SCALABLE #GATSBY #JAMSTACK ",
     "siteUrl": "https://nyalla.me",
     "image": "/assets/stackrole.png",
     "twitterUsername": ""
