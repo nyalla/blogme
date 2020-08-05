@@ -11,4 +11,4 @@ Apart from that I explore differnt technolgies like NodeJS,GraphQL. Some of my w
 
 * [JAVA Programming](https://github.com/nyalla/Programming) implementations on different tools include [kafka](https://kafka.apache.org/),[Elastic Search](https://www.elastic.co/) etc. 
 * [Personal blog](https://nyalla.github.io/) based on Github pages.
-* Curently exploring [JAMStack](https://jamstack.org/) using  [Gatsby](https://www.gatsbyjs.org/). Deployed on [Netlify](https://www.netlify.com/). Can check [here](https://nyalla.netlify.app/).
+* Currently exploring [JAMStack](https://jamstack.org/) using  [Gatsby](https://www.gatsbyjs.org/). Deployed on [Netlify](https://www.netlify.com/). Can check [here](https://nyalla.netlify.app/).
