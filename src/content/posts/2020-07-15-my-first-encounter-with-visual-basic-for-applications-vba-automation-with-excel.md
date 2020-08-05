@@ -61,7 +61,7 @@ It will create the folder with name "base" where we can find our XMLs.
         pathName = globalDir + "\" + id + "\"
         MkDir pathName
          file1 = pathName + "DefaultList.xml"
-         file2 = pathName + "DefaultEndpointList.xml"
+         file2 = pathName + "DefaultPathList.xml"
          ../
          ../
          ../
@@ -75,20 +75,20 @@ Set objStream = CreateObject("ADODB.Stream")
          objStream.Charset = "iso-8859-1"
          
          objStream.Open
-         objStream.WriteText ("<CusList>" & vbLf)
-         objStream.WriteText ("  <Cus>" & vbLf)
+         objStream.WriteText ("<CusListItem>" & vbLf)
+         objStream.WriteText ("  <CusItem>" & vbLf)
          objStream.WriteText ("      <Customer>Default</Customer>" & vbLf)
          objStream.WriteText ("      <CustomerId>" + id + "<Customer/Id>" & vbLf)
          objStream.WriteText ("      <NttyCustomerCd>ACTIVE</NttyCustomerCd>" & vbLf)
          objStream.WriteText ("      <FctvFr>2020-04-12T00:00:00</FctvFr>" & vbLf)
-         objStream.WriteText ("      <PtyCd>" + id + "</PtyCd>" & vbLf)
-         objStream.WriteText ("      <PtyNm>" + id + "</PtyNm>" & vbLf)
-         objStream.WriteText ("      <PtyDispNm>" + id + "</PtyDispNm>" & vbLf)
-         objStream.WriteText ("      <CustomerTp>HEARD</CustomerTp>" & vbLf)
-         objStream.WriteText ("      <PCustomerIdr>CRITICAL</CustomerIdr>" & vbLf)
-         objStream.WriteText ("      <CustomerCalCd>Default</CustomerCalCd>" & vbLf)
-         objStream.WriteText ("   </Cus>" & vbLf)
-         objStream.WriteText ("</CusList>" & vbLf)
+         objStream.WriteText ("      <ItemCd>" + id + "</ItemCd>" & vbLf)
+         objStream.WriteText ("      <ItemNm>" + id + "</ItemNm>" & vbLf)
+         objStream.WriteText ("      <ItemCdSummary>" + id + "</ItemCdSummary>" & vbLf)
+         objStream.WriteText ("      <ItemCustomerTp>HEARD</ItemCustomerTp>" & vbLf)
+         objStream.WriteText ("      <PCustomerItemIdr>CRITICAL</CustomerItemIdr>" & vbLf)
+         objStream.WriteText ("      <CustomerItemCalCd>Default</CustomerItemCalCd>" & vbLf)
+         objStream.WriteText ("   </CusItem>" & vbLf)
+         objStream.WriteText ("</CusListItem>" & vbLf)
          objStream.SaveToFile file1, 2
          objStream.Close
 ```
@@ -114,19 +114,18 @@ So above block defines what has to be XML file look like. If you observe 5th  li
          For i = LBound(coursesArray) To UBound(coursesArray)
          'MsgBox coursesArray(i)
          
-         objStream.WriteText ("  <EndCustomerpoint>" & vbLf)
-         objStream.WriteText ("      <Customer>Default</Customer>" & vbLf)
+         objStream.WriteText ("  <ItemEndCustomerCusListItemr>" & vbLf)
+         objStream.WriteText ("      <CustomeCusListItemr>Default</CustomeCusListItemr>" & vbLf)
          objStream.WriteText ("      <CustomerId>" + countryCode + "_" + stateCode + "_" + coursesArray(i) + "_" + sectionCode + "</CustomerId>" & vbLf)
          objStream.WriteText ("     <CustomerNttyStsCd>ACTIVE</CustomerNttyStsCd>" & vbLf)
-         objStream.WriteText ("     <CustomerFctvFr>2018-04-23T11:34:27.548</CustomerFctvFr>" & vbLf)
-         objStream.WriteText ("     <CustomerNdPtCd>VBA_" + countryCode + "_" + stateCode + "_" + coursesArray(i) + "_" + sectionCode + "_Flow</CustomerNdPtCd>" & vbLf)
+         objStream.WriteText ("     <CustomerFctvItemNdPtCd>" + countryCode + "_" + stateCode + "_" + coursesArray(i) + "_" + sectionCode + "</CustomerFctvItemNdPtCd>" & vbLf)
          objStream.WriteText ("     <CustomerNdPtNm>" + coursesArray(i) + " " + sectionCode + "</CustomerNdPtNm>" & vbLf)
          objStream.WriteText ("     <CustomerIsFldDataPrst>true</CustomerIsFldDataPrst>" & vbLf)
-         objStream.WriteText ("     </EndCustomerpoint>" & vbLf)
+         objStream.WriteText ("     </ItemEndCustomerCusListItemr>" & vbLf)
          
          Next
          
-         objStream.WriteText ("     </CustomerEndpointList>" & vbLf)
+         objStream.WriteText ("     </ItemEndCustomerCusListItemr>" & vbLf)
          objStream.SaveToFile file2, 2
          objStream.Close
 ```
