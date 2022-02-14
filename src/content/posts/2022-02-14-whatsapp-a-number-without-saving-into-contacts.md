@@ -15,7 +15,7 @@ So I made a small hack to it and deployed in github pages. All you need to do is
 
 Now your whatsapp will automatically open chat with given phone number and message.
 
-<https://github.com/nyalla/wame>
+<https://nyalla.github.io/wame/>
 
 Hope you will like it.
 
